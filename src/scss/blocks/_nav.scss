@@ -1,0 +1,40 @@
+.nav {
+	&--mobile {
+		display: flex;
+		flex-direction: column;
+	}
+	&__link {
+		text-decoration: none;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 400;
+		transition: 0.3s;
+		margin-right: 32px;
+
+
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&--mobile {
+			font-size: 16px;
+			margin-bottom: 24px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+		}
+
+		&:hover {
+			color: $accent-color;
+			transition: 0.3s;
+			text-decoration: underline;
+		}
+
+		&:active {
+			color: $accent-color;
+			transition: 0.3s;
+			text-decoration: underline;
+		}
+	}
+}

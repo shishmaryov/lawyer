@@ -1,0 +1,28 @@
+.contact {
+	display: flex;
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&:first-child {
+			margin-right: 28px;
+		}
+	}
+
+	&__item--phone {
+	}
+
+	&__icon {
+		margin-right: 8px;
+	}
+
+	&__text {
+		font-size: 14px;
+		font-weight: 600;
+		color: #fff;
+	}
+
+	&__item--mail {
+	}
+}

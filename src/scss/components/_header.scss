@@ -12,6 +12,16 @@
 	&__info {
 	}
 
+	&__logo {
+		width: 217px;
+		height: 47px;
+
+		@media(min-width: 1024px) {
+			width: 276px;
+			height: 62px;
+		}
+	}
+
 	&__button {
 		color: $accent-color;
 		background: none;

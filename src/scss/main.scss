@@ -16,9 +16,11 @@
 @import './blocks/logo';
 @import './blocks/nav';
 @import './blocks/mobile-menu';
+@import "./blocks/hero";
 
 :root {
 	font-family: 'Nunito Sans', sans-serif;
+	box-sizing: border-box;
 }
 
 .tablet-invisible {
@@ -30,5 +32,40 @@
 .mobile-invisible {
 	@media(max-width: 768px) {
 		display: none;
+	}
+}
+
+.button {
+	border: none;
+	background: $accent-color;
+	color: #fff;
+	padding-top: 16px;
+	padding-right: 24px;
+	padding-bottom: 16px;
+	padding-left: 24px;
+	font-size: 14px;
+	font-weight: 900;
+	text-align: center;
+	transition: 0.3s;
+	border: 1px solid transparent;
+
+	&:hover {
+		transition: 0.3s;
+		border: 1px solid $accent-color;
+		color: $accent-color;
+		background: #fff;
+	}
+
+	&--grey {
+		color: #222222;
+		background: #E6E6E6;
+		transition: 0.3s;
+		border: 1px solid transparent;
+
+		&:hover {
+			background: #fff;
+			border: 1px solid #E6E6E6;
+			color: #222222;
+		}
 	}
 }

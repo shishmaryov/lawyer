@@ -10,6 +10,8 @@
 @import './components/burger';
 @import './components/overlay';
 
+@import './mixins/corners';
+
 @import './pages/index-page';
 
 @import './blocks/contact';
@@ -17,55 +19,59 @@
 @import './blocks/nav';
 @import './blocks/mobile-menu';
 @import "./blocks/hero";
+@import "./blocks/services";
+@import "./blocks/service";
+
 
 :root {
-	font-family: 'Nunito Sans', sans-serif;
-	box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+  color: $black-color;
 }
 
 .tablet-invisible {
-	@media(max-width: 1170px) {
-		display: none;
-	}
+  @media(max-width: 1170px) {
+    display: none;
+  }
 }
 
 .mobile-invisible {
-	@media(max-width: 768px) {
-		display: none;
-	}
+  @media(max-width: 768px) {
+    display: none;
+  }
 }
 
 .button {
-	border: none;
-	background: $accent-color;
-	color: #fff;
-	padding-top: 16px;
-	padding-right: 24px;
-	padding-bottom: 16px;
-	padding-left: 24px;
-	font-size: 14px;
-	font-weight: 900;
-	text-align: center;
-	transition: 0.3s;
-	border: 1px solid transparent;
+  border: none;
+  background: $accent-color;
+  color: #fff;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid transparent;
 
-	&:hover {
-		transition: 0.3s;
-		border: 1px solid $accent-color;
-		color: $accent-color;
-		background: #fff;
-	}
+  &:hover {
+    transition: 0.3s;
+    border: 1px solid $accent-color;
+    color: $accent-color;
+    background: #fff;
+  }
 
-	&--grey {
-		color: #222222;
-		background: #E6E6E6;
-		transition: 0.3s;
-		border: 1px solid transparent;
+  &--grey {
+    color: #222222;
+    background: #E6E6E6;
+    transition: 0.3s;
+    border: 1px solid transparent;
 
-		&:hover {
-			background: #fff;
-			border: 1px solid #E6E6E6;
-			color: #222222;
-		}
-	}
+    &:hover {
+      background: #fff;
+      border: 1px solid #E6E6E6;
+      color: #222222;
+    }
+  }
 }

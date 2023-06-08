@@ -1,0 +1,81 @@
+.service {
+	background: #fff;
+	padding-top: 24px;
+	padding-bottom: 32px;
+	padding-left: 16px;
+	padding-right: 16px;
+	box-sizing: border-box;
+	transition: 0.3s;
+
+	@media(min-width: 768px) {
+		padding-top: 30px;
+		padding-bottom: 40px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	@media(min-width: 1024px) {
+		padding-top: 50px;
+		padding-bottom: 60px;
+
+		&:hover {
+			color: #fff;
+			background: $accent-color;
+			transition: 0.3s;
+	
+			@include buildCorners(#fff, 35px, 1px);
+			background-position: 20px 20px,
+			calc(100% - 20px) 20px,
+			calc(100% - 20px) calc(100% - 20px),
+			20px calc(100% - 20px);
+	
+			.service__icon {
+				fill: #fff;
+				transition: 0.3s;
+			}
+		}
+	}
+
+
+  &__icon {
+		width: 35px;
+		height: 35px;
+		fill: $accent-color;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: 15px;
+		transition: 0.3s;
+  }
+
+  &__title {
+		font-size: 20px;
+		font-weight: 900;
+		margin-top: 0;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+  }
+
+  &__description {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 51px;
+		-webkit-line-clamp: 3;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+
+		@media(min-width: 768px) {
+			max-height: none;
+			-webkit-line-clamp: unset;
+		}
+
+		&:hover {
+			-webkit-line-clamp: unset;
+			max-height: unset;
+		}
+  }
+}

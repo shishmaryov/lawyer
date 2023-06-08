@@ -5,53 +5,106 @@
 
 <body class="page__body">
   <div class="site-container">
-		@include('partials/mobile-menu.html')
+    @include('partials/mobile-menu.html')
     @include('partials/header.html')
     <main class="main">
       <section class="section hero">
-				<div class="container">
-					<div class="swiper hero__swiper">
-						<div class="swiper-wrapper hero__swiper-container">
-							<div class="swiper-slide hero__slide">
-								<h1 class="hero__title">
-									Оказываем весь комплекс 
-									<p class="hero__title--accent">юридических услуг</p>
-								</h1>
-								<p class="text hero__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
-								<button class="button hero__button">Наши услуги</button>
-							</div>
-							<div class="swiper-slide hero__slide">
-								<h1 class="hero__title">
-									Оказываем весь комплекс 2 
-									<p class="hero__title--accent">юридических услуг</p>
-								</h1>
-								<p class="text hero__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
-								<button class="button hero__button">Наши услуги</button>
-							</div>
-							<div class="swiper-slide hero__slide">
-								<h1 class="hero__title">
-									Оказываем весь комплекс 3 
-									<p class="hero__title--accent">юридических услуг</p>
-								</h1>
-								<p class="text hero__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
-								<button class="button hero__button">Наши услуги</button>
-							</div>
-						</div>
-						<div class="swiper-pagination hero__pagination mobile-invisible"></div>
-						<svg class="swiper-button-prev hero__arrow--prev mobile-invisible">
-							<use xlink:href="img/sprite.svg#arrow-prev"></use>
-						</svg>
-						<svg class="swiper-button-next hero__arrow--next mobile-invisible">
-							<use xlink:href="img/sprite.svg#arrow-next"></use>
-						</svg>
-						
-						<svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__pagination-decor mobile-invisible">
+        <div class="container">
+          <div class="swiper hero__swiper">
+            <div class="swiper-wrapper hero__swiper-container">
+              <div class="swiper-slide hero__slide">
+                <h1 class="hero__title">
+                  Оказываем весь комплекс
+                  <p class="hero__title--accent">юридических услуг</p>
+                </h1>
+                <p class="text hero__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
+                <button class="button hero__button">Наши услуги</button>
+              </div>
+              <div class="swiper-slide hero__slide">
+                <h1 class="hero__title">
+                  Оказываем весь комплекс 2
+                  <p class="hero__title--accent">юридических услуг</p>
+                </h1>
+                <p class="text hero__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
+                <button class="button hero__button">Наши услуги</button>
+              </div>
+              <div class="swiper-slide hero__slide">
+                <h1 class="hero__title">
+                  Оказываем весь комплекс 3
+                  <p class="hero__title--accent">юридических услуг</p>
+                </h1>
+                <p class="text hero__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
+                <button class="button hero__button">Наши услуги</button>
+              </div>
+            </div>
+            <div class="swiper-pagination hero__pagination mobile-invisible"></div>
+            <svg class="swiper-button-prev hero__arrow--prev mobile-invisible">
+              <use xlink:href="img/sprite.svg#arrow-prev"></use>
+            </svg>
+            <svg class="swiper-button-next hero__arrow--next mobile-invisible">
+              <use xlink:href="img/sprite.svg#arrow-next"></use>
+            </svg>
+
+            <svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__pagination-decor mobile-invisible">
 <line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#E6E6E6" stroke-width="2"/>
 </svg>
 
-					</div>
-				</div>
-			</section>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <h2 class="services__title">Наши услуги</h2>
+          <p class="services__decription">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+          <div class="services__cards">
+            <div class="services__wrapper">
+              <div class="services__card service">
+                <svg class="service__icon">
+                  <use xlink:href="img/sprite.svg#service-icon"></use>
+                </svg>
+                <h3 class="service__title">Банкротство физических лиц</h3>
+                <p class="service__description">Процедуру банкротства физических лиц в России регулирует закон «О несостоятельности (банкротстве)». </p>
+              </div>
+              <div class="services__card service">
+                <svg class="service__icon">
+                  <use xlink:href="img/sprite.svg#service-icon"></use>
+                </svg>
+                <h3 class="service__title">Сопровождение сделок</h3>
+                <p class="service__description">Инициирование, оформление, осуществление сделки и достижение результата — это именно то, чем мы занимаемся каждый день.</p>
+              </div>
+              <div class="services__card service">
+                <svg class="service__icon">
+                  <use xlink:href="img/sprite.svg#service-icon"></use>
+                </svg>
+                <h3 class="service__title">Корпоративные сделки</h3>
+                <p class="service__description">Корпоративные споры – споры, связанные с созданием юрлица, управлением или участием в нем</p>
+              </div>
+              <div class="services__card service">
+                <svg class="service__icon">
+                  <use xlink:href="img/sprite.svg#service-icon"></use>
+                </svg>
+                <h3 class="service__title">Недвижимость и строительство</h3>
+                <p class="service__description">Консультируем по различным вопросам в области недвижимости, включая градостроительное регулирование, земельные отношения</p>
+              </div>
+              <div class="services__card service">
+                <svg class="service__icon">
+                  <use xlink:href="img/sprite.svg#service-icon"></use>
+                </svg>
+                <h3 class="service__title">Возврат страховых премий</h3>
+                <p class="service__description">Для возврата страховой премии нужно подготовить следующий пакет документов: паспорт страхователя; оригинал страхового полиса</p>
+              </div>
+              <div class="services__card service">
+                <svg class="service__icon">
+                  <use xlink:href="img/sprite.svg#service-icon"></use>
+                </svg>
+                <h3 class="service__title">Налоговое право и споры</h3>
+                <p class="service__description">Сопровождение налоговых проверок на любой стадии, анализ и подготовка документов, защита при налоговых спорах.</p>
+              </div>
+            </div>
+          </div>
+          <button class="button services__button">Все услуги</button>
+        </div>
+      </section>
     </main>
     @include('partials/footer.html')
   </div>

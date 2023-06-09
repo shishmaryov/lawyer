@@ -46,16 +46,16 @@
             </svg>
 
             <svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__pagination-decor mobile-invisible">
-<line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#E6E6E6" stroke-width="2"/>
-</svg>
+              <line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#E6E6E6" stroke-width="2" />
+            </svg>
 
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="section services">
         <div class="container">
-          <h2 class="services__title">Наши услуги</h2>
-          <p class="services__decription">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+          <h2 class="section__title services__title">Наши услуги</h2>
+          <p class="section__description services__decription">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
           <div class="services__cards">
             <div class="services__wrapper">
               <div class="services__card service">
@@ -105,8 +105,31 @@
           <button class="button services__button">Все услуги</button>
         </div>
       </section>
+      <section class="section about">
+        <div class="container">
+          <div class="about__column">
+            <div class="about__text-block">
+              <h2 class="section__title about__title">Юридическая компания <span class="colorful">правозащитник</span></h2>
+              <p class="about__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение.</p>
+              <p class="about__text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.</p>
+              <p class="about__text">За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+            </div>
+            <div class="about__buttons">
+              <button class="button about__button about__button--main">История компании</button>
+              <button class="button button--grey about__button about__button--additional">Сертификаты</button>
+            </div>
+          </div>
+          <div class="about__column">
+            <picture class="about__img">
+              <source srcset="./img/about-img.webp" type="image/webp">
+              <img loading="lazy" src="./img/about-img.jpg" class="about__img" width="535" height="359" alt="Изображение компании">
+            </picture>
+          </div>
+        </div>
+      </section>
     </main>
     @include('partials/footer.html')
   </div>
 </body>
+
 </html>
